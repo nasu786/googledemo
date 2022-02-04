@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'arial', sans-serif;
+}
+
+
+body{
+    background-color: #202124;
+    display: flex;
+	flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+    transition: all .25s ease-out;
+}
+
+.whitebody {
+    background-color: white;
+    
+}
+
+header{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 10px 10px 0px;
+}
+
+.containar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 40px;
+    transform : translateX(8px);
+    
+}
+
+.containar .img {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    transition: all .25s ease-out;
+
+}
+.imgdark {
+    background-image: url(/theme_light.svg);
+}
+
+.containar a {
+    font-size: 8.5px;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: all .25s ease-out;
+}
+
+.textdark {
+    color: rgb(255, 255, 255);
+
+}
+
+.containar a:hover{
+    text-decoration: underline;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 40px;
+}
+
+.image img{
+    position:absolute;
+    transition: all .25s ease-out;
+}
+
+.light {
+    display: none;
+}
+
+.image {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    border-radius: 20px; 
+}
+
+.image:hover{
+    cursor: pointer;
+    background-color: #7e7e7e3a;
+}
+
+.buttons img:hover {
+    cursor: pointer;
+    
+}
+
+header button{
+    width: 65px;
+    height: 24px;
+    border-radius: 3px;
+    border: none;
+    font-size: 10px;
+    background-color: #97bfff;
+    transition: all .25s ease-out;  
+
+}
+header button:hover{
+    background-color: #8ab4f8f6;
+    cursor: pointer;
+}
+header img{
+    width: 10px;
+    height: 10px;
+    transition: all .25s ease-out;
+}
+
+section{
+    
+    height: 100%;
+}
+
+
+.google{
+    display: flex;
+    justify-content: center;
+
+}
+
+.google img{
+    width: 182px;
+    transition: all .25s ease-out;
+    
+}
+
+.searchbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+    transition: all .25s ease-out;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90vh;
+    height: 30px;
+    border: thin solid rgb(102, 101, 101);
+    border-radius: 20px;
+    padding: -10px;
+}
+
+.box:hover{
+    background: #5757576c;
+    border: none;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.20);
+}
+
+.searchicons{
+    width: 90vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.search-icon{
+    width: 14px;
+
+
+}
+
+.search-mic {
+    width: 16px;
+    height: 16px;
+    
+}
+
+
+
+.searchtext{
+    position: absolute;
+    width: 80vh;
+    height: 30px;
+    outline: none;
+    border: none;  
+    background: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 10px;
+    transition: all .25s ease-out;
+}
+
+.searchbuttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.searchbuttons button{
+    width: 90px;
+    height: 24px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 2.5px;
+    font-size: 9px;
+    font-weight: 100;
+    transition: all .25s ease-out;
+
+}
+
+.searchbtndark {
+    color: #f3f3f3;
+    background-color: #2c2e30;
+
+}
+
+.searchbtndark:hover{
+    outline: 1px solid rgb(102, 101, 101);
+    cursor: pointer;
+}
+
+.languages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+}
+
+.languages h6{
+    font-size: 8.9px;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: all .25s ease-out;
+    
+}
+
+.languagedark {
+    color: rgb(173, 173, 173);
+
+}
+
+.languages span{
+    font-size: 8.5px;
+    margin-left: 6.5px;  
+    margin-top: 10px;
+    transition: all .25s ease-out; 
+}
+
+.languagesdark {
+    color: #8ab4f8;
+}
+
+.languages span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #181818;
+    width: 100%;
+    height: 20%;  
+    transition: all .25s ease-out;  
+}
+
+.firstfooter, .secondfooter{
+    width: 100%;
+    height: 50%;
+    padding: 0px 0px 0px 20px; 
+}
+
+hr{
+    border: none;
+    background-color: white;
+    height: 1px;
+    opacity: 10%;
+
+}
+.firstfooter{
+    display: flex;
+    align-items: center;
+
+}
+
+.firstfooter h6 {
+    
+	font-size: 10px;
+    font-weight: 200; 
+    transition: all .25s ease-out;  
+}
+
+.footerh6dark {
+    color: #9aa0a6;
+
+}
+
+
+
+.secondfooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 5px;
+}
+
+.secfooter1, .secfooter2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.secfooter1{
+    margin-left: 5px;
+}
+
+.secondfooter a {
+	font-size: 9px;
+    text-decoration: none;
+    margin: 0px 20px 0px 0px;
+    transition: all .25s ease-out;
+}
+
+.footeradark {
+    color: #9aa0a6;
+}
+
+.secondfooter a:hover {
+    text-decoration: underline;
+}
+
+
+
+.apps {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    background-color: #2c2e30;
+    border-radius: 5px;
+    box-shadow: 5px -5px 6px 0px rgba(0,0,0,0.13);
+    width: 212px;
+    height: 0px;
+    margin-top: 40px;
+    opacity: 0%;
+    overflow-y: scroll;
+    transition: all .15s ease-out;  
+
+}
+
+.app1, .app2 {
+    width: 212px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0px 10px 10px;
+}
+
+.apps::-webkit-scrollbar{
+    width: 5px;
+}
+
+.apps::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    transition: all .35s ease-out;
+}
+
+.appscrollbardark::-webkit-scrollbar-thumb{
+    background-color: #414141;  
+}
+.appscrollbarlight::-webkit-scrollbar-thumb{
+    background-color: #dddada;  
+}
+
+
+.apps .app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 54px;
+    height: 56px;
+    border-radius: 5px;
+    margin: 3px 6px 6px 5px;
+    transition: all .1s ease-out;
+}
+
+.apps .app:hover{
+    cursor: pointer;
+}
+
+.apps .apphover:hover{
+    background-color: rgba(36, 38, 41, 0.603);
+
+}
+
+.apps .app img {
+    width: 25px;
+    height: 25px;
+    transform: translateY(3px);
+}
+
+.apps .app h6{
+    font-size: 10px;
+    font-weight: 400;
+    margin-top: 7px;
+    text-align: center;
+    transition: all .15s ease-out;
+    
+}
+
+.apps .app .h6dark {
+    color: #e8eaed;
+
+}
+
+.apps hr {
+    border: rgb(255, 255, 255);
+    width: 205px;
+    height: thin;
+}
+
+.apps button {
+    width: auto;
+    height: auto;
+    background: transparent;
+    
+    margin-bottom: 15px;
+    padding: 7px 15px 7px 15px;
+}
+
+.apps .appbtndark {
+    border: 0.5px solid #97bfff;
+    color: #97bfff;
+}
+
+.apps .appbtndark:hover {
+    background: rgba(199, 230, 214, 0.123);;
+}
+
+
+.dark {
+    display: none;
+}
+
+.light {
+    display: none;
+}
+
+.imglight {
+    background-image: url(/theme_dark.svg);
+    transform: rotate(180deg);
+}
+
+.textlight{
+    color: #3c4043;
+}
+
+.signuplight {
+    color: white;
+    background-color: #3a78db;
+
+}
+
+.boxlight {
+    border: thin solid rgb(224, 224, 224);
+}
+
+.boxlight:hover{
+    background: #ffffff6c;
+}
+
+.searchtextlight {
+    color: black;
+}
+
+.searchbtnlight {
+    color: #3c4043;
+    background-color: #f8f9fa;
+}
+
+.searchbtnlight:hover {
+    outline: 1px solid rgb(167, 167, 167);
+    box-shadow: 0px 3px 6px 0px rgba(0,0,0,0.10);
+}
+
+.languagelight{
+    color: #3c4043;
+}
+
+.languageslight{
+    color: #1a0dab;
+}
+
+.footerlight {
+    background-color: #e2e2e263;
+}
+
+.footerhrlight {
+    background-color: black;
+}
+
+.footerh6light {
+    color: #70757a;
+}
+
+.footeralight {
+    color: #70757a;
+}
+
+.appshow {
+    opacity: 100%;
+    height: 300px;
+    z-index: 10;
+}
+
+.appslight {
+    background-color: white;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.39);
+}
+
+.h6light {
+    color: rgba(0, 0, 0, 0.733);
+}
+
+.applight:hover {
+    background-color: rgba(182, 231, 207, 0.404);
+
+}
+
+.appbtnlight {
+    color: #1a73e8;
+    border: 0.1px solid #36373869; ;
+}
+.appbtnlight:hover {
+    background-color: #eff8ef;
+}
