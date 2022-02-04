@@ -48,7 +48,7 @@ header{
 
 }
 .imgdark {
-    background-image: url(/theme_light.svg);
+    background-image: url(./theme_light.svg);
 }
 
 .containar a {
@@ -460,7 +460,7 @@ hr{
 }
 
 .imglight {
-    background-image: url(/theme_dark.svg);
+    background-image: url(./theme_dark.svg);
     transform: rotate(180deg);
 }
 
